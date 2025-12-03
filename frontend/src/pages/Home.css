@@ -1,0 +1,14 @@
+/* Home.css */
+.home-container {
+  display: flex;
+  height: 100vh; /* Full height */
+  width: 100vw; /* Full width */
+  overflow: hidden; /* Prevents scrolling */
+  background-color: #0f4c36;
+}
+
+.flow-editor {
+  flex-grow: 1; /* Takes remaining space */
+  background-color: #fff6f4; /* Editor background */
+  overflow: auto;
+}

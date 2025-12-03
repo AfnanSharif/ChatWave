@@ -1,0 +1,115 @@
+.node-box {
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  padding: 12px;
+  width: 260px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  border-left: 6px solid #ffa726; /* Orange border like the image */
+}
+
+.node-header {
+  display: flex;
+  align-items: center;
+  background-color: #ffa726; /* Light orange header */
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 3px solid #ffa726;
+  margin-bottom: 6px;
+}
+
+.node-icon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.node-title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  flex-grow: 1;
+  font-size: 15px;
+  color: #000000;
+}
+
+.question-input {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  width: 90%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.response-container {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.response-option {
+  position: relative;
+}
+
+.response-box {
+  position: relative;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0;
+  width: 100%;
+}
+
+.response-input {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  padding: 6px 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 13px;
+  color: #000000;
+  outline: none;
+  border-radius: 4px;
+}
+
+.response-input:focus {
+  background-color: #fff;
+  box-shadow: 0 0 0 2px #d32f2f;
+  width: 90%;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #d32f2f;
+  padding: 0;
+  margin-left: 8px;
+}
+
+/* Styling for the handles */
+.main-handle {
+  width: 10px;
+  height: 10px;
+  background-color: #d32f2f;
+  left: -5px;
+}
+
+.response-handle {
+  width: 8px;
+  height: 8px;
+  background-color: #388e3c;
+  right: -4px;
+  top: 50%;
+}
+
+/* Make sure handles are above the node content */
+.react-flow__handle {
+  z-index: 10;
+}
